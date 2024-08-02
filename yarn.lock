@@ -5,8 +5,8 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"eslint-prettier-tutorial@workspace:.":
+"eslint-prettier-markdown-tutorial@workspace:.":
   version: 0.0.0-use.local
-  resolution: "eslint-prettier-tutorial@workspace:."
+  resolution: "eslint-prettier-markdown-tutorial@workspace:."
   languageName: unknown
   linkType: soft
