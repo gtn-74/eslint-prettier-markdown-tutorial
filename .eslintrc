@@ -1,5 +1,13 @@
 {
   "env": {
-    "browser": true //window,alertなどのプロパティを使える命令
-  }
+    "browser": true, // window,alert,documentなどのプロパティを使える命令
+    "node": true, // process,などグローバル変数を許可
+    "es6": true // アロー関数、const、letが反映したECMAScriptのバージョンを設定します宣言
+  },
+  // ECMAScriptのバージョン
+  "parserOptions": {
+    "ecmaVersion": "latest", // 最新
+    "sourceType": "module" // scriptではなく、moduleを使うことで、import、exportが使えるようになる
+  },
+  "rules": { "no-console": ["warn"] } //error,warn,offと書き換えることで、消す必要性をエラで訴える
 }

@@ -1,15 +1,18 @@
+'no-unused-vars'
 
+// var x // 使われていない変数定義に対してエラーを出す
 
-"no-unused-vars"
+// var y = 10
+// console.log(y)
 
-var x; // 使われていない変数定義に対してエラーを出す
+// ;('max-len')
 
-var y = 10;
-console.log(y);
+// /*eslint max-len: ["error", { "code": 80 }]*/
 
-"max-len"
+// // 一行の長さが指定した文字数以上だとエラーになる
+// var foo = {
+//           bar: 'This is a bar.',
 
-/*eslint max-len: ["error", { "code": 80 }]*/
-
-// 一行の長さが指定した文字数以上だとエラーになる
-var foo = { "bar": "This is a bar.", "baz": { "qux": "This is a qux" }, "difficult": "to read" };
+//           baz: { qux: 'This is a qux' },
+//           difficult: 'to read',
+// }
