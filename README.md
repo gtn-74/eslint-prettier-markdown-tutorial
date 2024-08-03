@@ -11,9 +11,24 @@
 - 折り返しルール等
 
 ## 重複ルールの取り扱い注意点
-それぞれ別の役割を持つESLint（品質チェックツール）とPretter（コード形成）だが、
+それぞれ別の役割を持つESLint（品質チェックツール）とPretter（コード形成）だが、それぞれ同じような機能を持っている。
+そのため同じルールなのに、結果が違う場合、コンフリクトが発生してしまう様子
 
+**.prettierrc.json**  
+`
+{
+  "semi": false
+}
+`
 
+**.eslintrc.json**  
+`
+{
+  "rules": {
+    "semi": ["error", "always"]
+  }
+}
+`
 
 ### 引用
 - [Markdown記法 サンプル集](https://qiita.com/tbpgr/items/989c6badefff69377da7)  
