@@ -6,17 +6,42 @@
 - コードの品質を担保するために使う　　
 
 とはいえ、ドキュメントを全て見るのはなかなか時間がかかる。  
-なので、[airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)が提供しているライブラリを使ってみても良さそう。  
+**なので[airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)が提供しているライブラリを使ってみても良さそう。**  
   
 ```
 npm i eslint-config-airbnb
 ```
+vscodeの拡張機能にもある。  
+
+### Official ESLint 
+https://eslint.org/docs/latest/use/getting-started  
+
+### husky  
+https://typicode.github.io/husky/get-started.html  
+
+
 
 ## Prettier
 **コード自動整形ツール。コードに統一感を持たせるツール**
 - インデントの付け方
 - 折り返しルール等
 
+ESLintでもインデント、クウォートの指定は、できるが、コード形成という面から考えるとPrettierで形成した方が良いと考える。
+
+### Official Prettier  
+https://prettier.io/docs/en/  
+
+Configurinig Prettier Optionsをチェックしてみると良い。　　
+
+**自動保存**  
+setting.jsonで自動保存、指定言語時だけの補正が可能になるらしい
+
+```
+{
+  "editor.codeActionsOnSave": { "source.fixAll": true },
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
+```
 
 
 ## 重複ルールの取り扱い注意点
