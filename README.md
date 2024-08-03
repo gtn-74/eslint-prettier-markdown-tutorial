@@ -5,10 +5,19 @@
 - バグの温床になりそうなコードがないかチェックするツール
 - コードの品質を担保するために使う　　
 
+とはいえ、ドキュメントを全て見るのはなかなか時間がかかる。  
+なので、[airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)が提供しているライブラリを使ってみても良さそう。  
+  
+```
+npm i eslint-config-airbnb
+```
+
 ## Prettier
 **コード自動整形ツール。コードに統一感を持たせるツール**
 - インデントの付け方
 - 折り返しルール等
+
+
 
 ## 重複ルールの取り扱い注意点
 それぞれ別の役割を持つESLint（品質チェックツール）とPretter（コード形成）だが、それぞれ同じような機能を持っている。
