@@ -1,5 +1,5 @@
 {
   "env": {
-    "browser": true  //window,alertなどのプロパティを使える命令
+    "browser": true //window,alertなどのプロパティを使える命令
   }
 }
